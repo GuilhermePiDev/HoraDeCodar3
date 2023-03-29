@@ -1,0 +1,43 @@
+<script>
+    var nota1 = parseFloat(prompt("Informe a primeira nota"));
+    var nota2 = parseFloat(prompt("Informe a segunda nota"));
+
+    let media = (nota1 + nota2) / 2;
+
+    if (media > 9.5) {
+        alert("A média desse aluno é " + media + " Aprovado!!!!");
+    }
+    else {
+        alert("A média desse aluno é " + media + " Reprovado!!!!");
+    }
+
+    var mediaDnv = prompt("Calcular a média de outro aluno Sim/Não?");
+
+    switch (mediaDnv.toLowerCase()) {
+        case 's':
+        case 'sim':
+            while (mediaDnv.toLowerCase() === "s" || mediaDnv.toLowerCase() === "sim") {
+                nota1 = parseFloat(prompt("Informe a primeira nota"));
+                nota2 = parseFloat(prompt("Informe a segunda nota"));
+                media = (nota1 + nota2) / 2;
+                if (media > 9.5) {
+                    alert("A média desse aluno é " + media + " Aprovado!!!!");
+                }
+                else {
+                    alert("A média desse aluno é " + media + " Reprovado!!!!");
+                }
+                mediaDnv = prompt("Calcular a média de outro aluno Sim/Não?");
+            }
+            break;
+
+        case 'n':
+        case 'nao':
+        case 'não':
+            alert("Ok, muito obrigado!");
+            break;
+
+        default:
+            alert("Informe algo condizente");
+            break;
+    }
+</script>

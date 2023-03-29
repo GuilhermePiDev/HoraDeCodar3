@@ -1,0 +1,24 @@
+<script>
+    let notaV,soma=0,media,valorAceito;
+    let notas = 1;
+    
+    while(notaV<=6){
+        valorAceito = false;
+    while (!valorAceito) {
+        notaV = parseFloat(prompt("Informe a nota " + notas + ":"));
+        if (notaV >= 0 && notaV <= 10) {
+            valorAceito = true;
+            soma += notaV;
+            notas++;
+        } else {
+            alert("Valor inválido! Informe uma nota entre 0 e 10.");
+        }
+    }
+}
+
+// Cálculo da média e impressão do resultado
+media = soma / 6;
+alert("A média do aluno é " + media);
+    
+    
+</script>

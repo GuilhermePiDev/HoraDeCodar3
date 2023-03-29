@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    var num1= parseInt(prompt("Informe um valor"));
+    var num2= parseInt(prompt("Informe um segundo valor"));
+    var num3 = num2+1;
+    while(num1<=0||num2<=0){
+      if(num1<=0){
+        num1 = prompt("Informe um primeiro valor que seja maior que zero");
+      }
+      else if(num2<=0){
+       num2 = prompt("Informe um segundo valor que seja maior que zero")
+      }
+      
+      
+    }
+    var numerosEntre = setInterval(function (){
+    document.write(num1+ "<br>");
+    num1 ++;
+    
+    clearInterval(num1==num3);
+    
+    
+    },1000)
+
+     
+// na pura gambiarra mas tá funcionando
+</script>

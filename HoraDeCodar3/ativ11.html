@@ -1,0 +1,14 @@
+<script>
+var dentro = 0;
+var fora = 0;
+for (let i = 1; i <= 10; i++) {
+  let valor = parseFloat(prompt("Informe o " +i + " º valor:"));
+  if (valor >= 24 && valor <= 42) {
+    dentro++;
+  } else {
+    fora++;
+  }
+}
+alert("Valores dentro do intervalo:" +dentro);
+alert("Valores fora do intervalo:" +fora);
+</script>

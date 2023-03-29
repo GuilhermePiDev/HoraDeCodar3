@@ -1,0 +1,17 @@
+ <meta charset="UTF-8">
+ <script>
+    var segundos=30;
+    
+    var explosao =setInterval( function(){
+        document.write("Timer:"+segundos+ "<br>");
+
+        segundos--;
+
+        if(segundos<0){
+        alert("Explosão!!!!")
+    }
+    clearInterval(segundos<0);
+    },1000)
+    
+    //Pesquisei sobre como fazer um temporizador ou algo relacionado e achei o "setInterval"
+</script>
